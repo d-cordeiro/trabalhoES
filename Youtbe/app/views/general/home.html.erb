@@ -1,0 +1,45 @@
+<table>
+
+  <tr>
+
+    <td class="category_bar">
+      <% @categories.each do |category| %>
+          <p><%= category %></p>
+      <% end %>
+    </td>
+
+    <td>
+      <table class="soft_border">
+        <tr>
+          <td></td>
+          <td>
+            <p>Movies</p>
+            <% @list = @featured.where(:category => 'Movies').limit(3) %>
+            <%= render 'listing' %>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <p>Music</p>
+            <% @list = @featured.where(:category => 'Music').limit(3) %>
+            <%= render 'listing' %>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <p>Sport</p>
+            <% @list = @featured.where(:category => 'Sport').limit(3) %>
+            <%= render 'listing' %>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+
+</table>
