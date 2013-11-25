@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Photo:</b>
+  <%= @captcha.photo %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @captcha.code %>
+</p>
+
+
+<%= link_to 'Edit', edit_captcha_path(@captcha) %> |
+<%= link_to 'Back', captchas_path %>
