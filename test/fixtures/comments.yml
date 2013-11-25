@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  comment: MyText
+  likes: 1
+  dislikes: 1
+  video_id: 1
+
+two:
+  comment: MyText
+  likes: 1
+  dislikes: 1
+  video_id: 1

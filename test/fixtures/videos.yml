@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  privacy: false
+  description: MyText
+  title: MyString
+  category: MyString
+  age: 1
+  has_comments: false
+  likes: 1
+  dislikes: 1
+
+two:
+  privacy: false
+  description: MyText
+  title: MyString
+  category: MyString
+  age: 1
+  has_comments: false
+  likes: 1
+  dislikes: 1

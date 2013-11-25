@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Privacy:</b>
+  <%= @video.privacy %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @video.description %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @video.title %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @video.category %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @video.age %>
+</p>
+
+<p>
+  <b>Has comments:</b>
+  <%= @video.has_comments %>
+</p>
+
+<p>
+  <b>Likes:</b>
+  <%= @video.likes %>
+</p>
+
+<p>
+  <b>Dislikes:</b>
+  <%= @video.dislikes %>
+</p>
+
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>
