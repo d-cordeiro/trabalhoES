@@ -30,3 +30,26 @@
      background-color: lightpink;
     border: 2px solid;
 }
+
+.video_title{
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    line-height: normal;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 0;
+    color: #222;
+}
+
+.video_title span{
+    font-size: .9em;
+    letter-spacing: -0.05em;
+    font-family: arial,sans-serif;
+}
+
+.video_description_border_top{
+    border-bottom: 1px solid #e6e6e6;
+}

@@ -13,7 +13,10 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
+
     @video = Video.find(params[:id])
+    @video.increment!(:views)
+    @related_videos = Video.find_all_by_category(@video.category)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -79,5 +82,17 @@ class VideosController < ApplicationController
       format.html { redirect_to videos_url }
       format.json { head :no_content }
     end
+  end
+
+  def like
+    @video = Video.find(params[:video_id])
+    @video.increment!(:likes)
+    redirect_to @video
+  end
+
+  def dislike
+    @video = Video.find(params[:video_id])
+    @video.increment!(:dislikes)
+    redirect_to @video
   end
 end

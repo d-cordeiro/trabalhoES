@@ -40,17 +40,17 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    @comment = Comment.new(params[:comment])
+    @video = Video.find(params[:video_id])
 
-    respond_to do |format|
-      if @comment.save
-        format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
-        format.json { render json: @comment, status: :created, location: @comment }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @comment.errors, status: :unprocessable_entity }
-      end
+    if params[:comment].blank?
+      flash[:error] = "Comentario nao adicionado. Inserir pelo menos um caracter."
+      redirect_to @video
+    else
+      @comment = Comment.new(:comment => params[:comment], :video_id => params[:video_id], :dislikes => 0, :likes => 0)
+      @comment.save
+      redirect_to @video
     end
+
   end
 
   # PUT /comments/1
@@ -79,5 +79,19 @@ class CommentsController < ApplicationController
       format.html { redirect_to comments_url }
       format.json { head :no_content }
     end
+  end
+
+  def clike
+    @video = Video.find(params[:video_id])
+    @comment = Comment.find(params[:comment_id])
+    @comment.increment!(:likes)
+    redirect_to @video
+  end
+
+  def cdislike
+    @video = Video.find(params[:video_id])
+    @comment = Comment.find(params[:comment_id])
+    @comment.increment!(:dislikes)
+    redirect_to @video
   end
 end

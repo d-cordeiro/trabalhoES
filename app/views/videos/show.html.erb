@@ -1,19 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Privacy:</b>
-  <%= @video.privacy %>
-</p>
 
-<p>
-  <b>Description:</b>
-  <%= @video.description %>
-</p>
+<video id="<%= @video.id %>" class="video-js vjs-default-skin vjs-big-play-centered" controls width="640" height="380" poster="<%= escape_javascript(asset_path(@video.image_path)) %>" data-setup='{"preload":true, "controls":true}'>
+  <source src="<%= escape_javascript(asset_path(@video.path)) -%>" type="video/mp4"/>
+</video>
 
-<p>
-  <b>Title:</b>
-  <%= @video.title %>
-</p>
+<h1 class="video_title"><span><%= @video.title %></span></h1>
+
 
 <p>
   <b>Category:</b>
@@ -21,13 +14,8 @@
 </p>
 
 <p>
-  <b>Age:</b>
-  <%= @video.age %>
-</p>
-
-<p>
-  <b>Has comments:</b>
-  <%= @video.has_comments %>
+  <b>Views:</b>
+  <%= @video.views %>
 </p>
 
 <p>
@@ -35,11 +23,67 @@
   <%= @video.likes %>
 </p>
 
+<%= form_tag "/videos/like", :method => 'get', :remote => true do %>
+    <p>
+      <%= hidden_field_tag 'video_id', @video.id  %>
+      <%= submit_tag "Like" %>
+    </p>
+<% end %>
+
 <p>
   <b>Dislikes:</b>
   <%= @video.dislikes %>
 </p>
 
+<%= form_tag "/videos/dislike", :method => 'get', :remote => true do %>
+    <p>
+      <%= hidden_field_tag 'video_id', @video.id  %>
+      <%= submit_tag "Dislike" %>
+    </p>
+<% end %>
 
-<%= link_to 'Edit', edit_video_path(@video) %> |
-<%= link_to 'Back', videos_path %>
+<p class="video_description_border_top">
+  <b>Description:</b>
+  <%= @video.description %>
+</p>
+
+<% if @video.comments.blank? %>
+    <p>Sem comentários</p>
+<% else %>
+    <% @video.comments.each do |comment| %>
+        <p><%= comment.comment %> - <%= comment.likes %> - <%= comment.dislikes %></p>
+        <%= form_tag "/comments/clike", :method => 'get' do %>
+            <p>
+              <%= hidden_field_tag 'video_id', @video.id  %>
+              <%= hidden_field_tag 'comment_id', comment.id  %>
+              <%= submit_tag "Like" %>
+            </p>
+        <% end %>
+        <%= form_tag "/comments/cdislike", :method => 'get' do %>
+            <p>
+              <%= hidden_field_tag 'video_id', @video.id  %>
+              <%= hidden_field_tag 'comment_id', comment.id  %>
+              <%= submit_tag "Dislike" %>
+            </p>
+        <% end %>
+    <% end %>
+<% end %>
+
+
+
+
+<%= form_tag("/comments", :method => "post") do %>
+    <%= hidden_field_tag 'video_id', @video.id  %>
+    <%= text_field_tag(:comment) %>
+    <%= submit_tag("Comentar") %>
+<% end %>
+
+<%= flash[:error] %>
+
+<% @related_videos.each do |related_video| %>
+    <video id="<%= related_video.id %>" class="video-js vjs-default-skin vjs-big-play-centered" controls width="310" height="173" poster="<%= escape_javascript(asset_path(related_video.image_path)) %>" data-setup='{"preload":true, "controls":true}'>
+      <source src="<%= escape_javascript(asset_path(related_video.path)) -%>" type="video/mp4"/>
+    </video>
+    <p> <%= related_video.title %></p>
+<% end %>
+

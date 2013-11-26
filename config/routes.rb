@@ -2,8 +2,13 @@ Youtbe::Application.routes.draw do
 
 
   get "general/search"
-
   get "general/home"
+
+  get "videos/like"
+  get "videos/dislike"
+
+  get "comments/clike"
+  get "comments/cdislike"
 
   resources :comments
 
