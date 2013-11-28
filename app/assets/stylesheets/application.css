@@ -27,21 +27,17 @@
 }
 
 #search_bar{
-     background-color: lightpink;
+    background-color: lightpink;
     border: 2px solid;
 }
 
+
+
+#____________Video____________
+
 .video_title{
-    margin-bottom: 5px;
-    overflow: hidden;
-    white-space: nowrap;
-    word-wrap: normal;
-    text-overflow: ellipsis;
-    line-height: normal;
-    font-size: 24px;
-    font-weight: normal;
+    color: #000;
     margin-top: 0;
-    color: #222;
 }
 
 .video_title span{
@@ -50,6 +46,151 @@
     font-family: arial,sans-serif;
 }
 
-.video_description_border_top{
-    border-bottom: 1px solid #e6e6e6;
+.border_bottom{
+    border-bottom: 2px solid #666666;
+}
+
+.border_top{
+    border-top: 2px solid #e6e6e6;
+}
+
+.view_count {
+    float: right;
+}
+
+.view_count span{
+    font-size: 19px;
+    line-height: 24px;
+    color: #333;
+}
+
+.video_like{
+    float:left;
+}
+
+.video_dislike{
+    float: right;
+    margin-right: 330px;
+}
+
+.video_eval{
+    padding-bottom: 70px;
+}
+
+.comment_video{
+    margin-bottom: 10px;
+}
+
+
+.video_c{
+    margin-bottom: 50px;
+}
+
+.video_comment{
+    word-wrap: break-word;
+    width: 620px;
+}
+
+.comment_eval{
+    margin-bottom: 0px;
+}
+
+.clear_both{
+    clear: both;
+}
+
+.comment_like{
+    float: left;
+    height: 20px;
+}
+
+.comment_dislike{
+    float: right;
+    height: 20px;
+    margin-right: 80%;
+}
+
+.border_side{
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+}
+
+.video_attr{
+    width: 620px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.video_info{
+    width: 640px;
+    display: inline-block;
+}
+
+.video_related{
+    border-bottom: 2px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.related_videos{
+    width: 310px;
+    margin-left: 7%;
+    display: inline-block;
+}
+
+.video{
+    margin-left: 5%;
+    min-width: 1070px;
+}
+
+.eval_form_tag{
+    /* Structure */
+    display: inline-block;
+    zoom: 1;
+    font-size: 100%;
+    padding: 0.4em 1em 0.45em;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    /* Presentation */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255, 0.30)), color-stop(40%, rgba(255,255,255, 0.15)), to(transparent));
+    background-image: -webkit-linear-gradient(rgba(255,255,255, 0.30), rgba(255,255,255, 0.15) 40%, transparent);
+    background-image: -moz-linear-gradient(top, rgba(255,255,255, 0.30), rgba(255,255,255, 0.15) 40%, transparent);
+    background-image: -ms-linear-gradient(rgba(255,255,255, 0.30), rgba(255,255,255, 0.15) 40%, transparent);
+    background-image: -o-linear-gradient(rgba(255,255,255, 0.30), rgba(255,255,255, 0.15) 40%, transparent);
+    background-image: linear-gradient(rgba(255,255,255, 0.30), rgba(255,255,255, 0.15) 40%, transparent);
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 0 rgba(255,255,255, 0.30) inset, 0 1px 2px rgba(0,0,0, 0.15);
+    -moz-box-shadow: 0 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 0 rgba(255,255,255, 0.30) inset, 0 1px 2px rgba(0,0,0, 0.15);
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 0 rgba(255,255,255, 0.30) inset, 0 1px 2px rgba(0,0,0, 0.15);
+
+    /* Transitions */
+    -webkit-transition: 0.1s linear -webkit-box-shadow;
+    -moz-transition: 0.1s linear -moz-box-shadow;
+    -ms-transition: 0.1s linear box-shadow;
+    -o-transition: 0.1s linear box-shadow;
+    transition: 0.1s linear box-shadow;
+}
+
+.eval_form_tag:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#26000000', GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.15)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.15));
+    background-image: -moz-linear-gradient(top, transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.15));
+    background-image: -ms-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.15));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.15));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.15));
 }
