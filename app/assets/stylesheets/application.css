@@ -122,8 +122,8 @@
 }
 
 .video_info{
-    width: 640px;
-    display: inline-block;
+    float: left;
+    margin-top: 20px;
 }
 
 .video_related{
@@ -132,9 +132,9 @@
 }
 
 .related_videos{
+    float: left;
     width: 310px;
     margin-left: 7%;
-    display: inline-block;
 }
 
 .video{
