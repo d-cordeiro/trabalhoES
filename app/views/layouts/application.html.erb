@@ -9,6 +9,7 @@
 </head>
 <body>
 <div id=search_bar>
+
   <table>
     <tr>
       <td>
@@ -22,6 +23,14 @@
         <% end %>
       </td>
       <td>
+        <div id="user_nav">
+          <% if user_signed_in? %>
+            Bem vindo, <%= current_user.email %>!
+            <%= link_to "Terminar sessão", destroy_user_session_path, :method => :delete %>
+          <% else %>
+            <%= link_to "Criar conta", new_user_registration_path %> or <%= link_to "Iniciar sessão", new_user_session_path %>
+          <% end %>
+        </div>
         <button type="button">Iniciar sessão</button>
       </td>
     </tr>

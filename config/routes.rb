@@ -1,5 +1,8 @@
 Youtbe::Application.routes.draw do
 
+  devise_for :users
+
+  root to: "general#home"
 
   get "general/search"
   get "general/home"
