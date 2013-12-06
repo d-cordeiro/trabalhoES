@@ -18,6 +18,9 @@ class VideosController < ApplicationController
     @video.increment!(:views)
     @related_videos = Video.find_all_by_category(@video.category)
 
+    @comments = @video.comments
+    @comments = Comment.paginate(:page => params[:page], :per_page => 5)
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @video }

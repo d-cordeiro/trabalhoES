@@ -10,9 +10,8 @@
 
                 <td>
 
-                    <video id="<%= video.id %>" class="video-js vjs-default-skin" controls width="310" height="173" poster="<%= escape_javascript(asset_path(video.image_path)) %>" data-setup='{"preload":true, "controls":true}'>
-                      <source src="<%= escape_javascript(asset_path(video.path)) -%>" type="video/mp4"/>
-                    </video>
+                     <%=link_to(image_tag(escape_javascript(asset_path(video.image_path)),:size => "310x173"),
+                             {:controller => "videos", :action => "show", :id => video.id}) %>
                     <p> <%= video.title %></p>
 
 
@@ -22,17 +21,15 @@
     <% else if ((index % 3) == 1) %>
 
                   <td>
-                      <video id="<%= video.id %>" class="video-js vjs-default-skin" controls width="310" height="173" poster="<%= escape_javascript(asset_path(video.image_path)) %>" data-setup='{"preload":true, "controls":true}'>
-                        <source src="<%= escape_javascript(asset_path(video.path)) -%>" type="video/mp4"/>
-                      </video>
+                    <%=link_to(image_tag(escape_javascript(asset_path(video.image_path)),:size => "310x173"),
+                               {:controller => "videos", :action => "show", :id => video.id}) %>
                       <p> <%= video.title %></p>
                   </td>
 
      <% else %>
                   <td>
-                      <video id="<%= video.id %>" class="video-js vjs-default-skin" controls width="310" height="173" poster="<%= escape_javascript(asset_path(video.image_path)) %>" data-setup='{"preload":true, "controls":true}'>
-                        <source src="<%= escape_javascript(asset_path(video.path)) -%>" type="video/mp4"/>
-                      </video>
+                    <%=link_to(image_tag(escape_javascript(asset_path(video.image_path)),:size => "310x173"),
+                               {:controller => "videos", :action => "show", :id => video.id}) %>
                       <p> <%= video.title %></p>
                   </td>
         <% end %>

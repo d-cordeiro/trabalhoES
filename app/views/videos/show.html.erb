@@ -54,10 +54,15 @@
         <p><b>Comments</b></p>
 
         <div class="comment_video">
-            <%= form_tag("/comments", :method => "post") do %>
-                <%= hidden_field_tag 'video_id', @video.id  %>
-                <%= text_field_tag(:comment) %>
-                <%= submit_tag("Comment") %>
+
+            <% if user_signed_in? %>
+                <%= form_tag("/comments", :method => "post") do %>
+                    <%= hidden_field_tag 'video_id', @video.id  %>
+                    <%= text_field_tag(:comment) %>
+                    <%= submit_tag("Comment") %>
+                <% end %>
+            <% else %>
+              <p><u>É necessário ter a sessão iniciada para poder comentar.</u></p>
             <% end %>
 
             <%= flash[:error] %>
@@ -66,7 +71,7 @@
         <% if @video.comments.blank? %>
         <p>Sem comentários</p>
         <% else %>
-            <% @video.comments.each do |comment| %>
+            <% @comments.each do |comment| %>
               <div class="video_c border_top">
 
                 <div>
@@ -101,8 +106,8 @@
                 </div>
               </div>
             <% end %>
-
-        <% end %>
+            <%= will_paginate @comments, renderer: BootstrapPagination::Rails %>
+    <% end %>
     </div>
   </div>
   </div>
