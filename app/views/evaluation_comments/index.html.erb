@@ -1,0 +1,27 @@
+<h1>Listing evaluation_comments</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Eval</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @evaluation_comments.each do |evaluation_comment| %>
+  <tr>
+    <td><%= evaluation_comment.user %></td>
+    <td><%= evaluation_comment.eval %></td>
+    <td><%= evaluation_comment.comment_id %></td>
+    <td><%= link_to 'Show', evaluation_comment %></td>
+    <td><%= link_to 'Edit', edit_evaluation_comment_path(evaluation_comment) %></td>
+    <td><%= link_to 'Destroy', evaluation_comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Evaluation comment', new_evaluation_comment_path %>

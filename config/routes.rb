@@ -1,6 +1,13 @@
 Youtbe::Application.routes.draw do
 
+  resources :evaluation_comments
+
+
+  resources :evaluations
+
+
   devise_for :users
+  devise_for :users, :controllers => { :registrations => "registrations" }
 
   root to: "general#home"
 

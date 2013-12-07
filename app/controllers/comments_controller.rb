@@ -46,7 +46,7 @@ class CommentsController < ApplicationController
       flash[:error] = "Comentario nao adicionado. Inserir pelo menos um caracter."
       redirect_to @video
     else
-      @comment = Comment.new(:comment => params[:comment], :video_id => params[:video_id], :dislikes => 0, :likes => 0)
+      @comment = Comment.new(:comment => params[:comment], :video_id => params[:video_id], :user_name => params[:user_name], :dislikes => 0, :likes => 0)
       @comment.save
       redirect_to @video
     end
@@ -79,19 +79,5 @@ class CommentsController < ApplicationController
       format.html { redirect_to comments_url }
       format.json { head :no_content }
     end
-  end
-
-  def clike
-    @video = Video.find(params[:video_id])
-    @comment = Comment.find(params[:comment_id])
-    @comment.increment!(:likes)
-    redirect_to @video
-  end
-
-  def cdislike
-    @video = Video.find(params[:video_id])
-    @comment = Comment.find(params[:comment_id])
-    @comment.increment!(:dislikes)
-    redirect_to @video
   end
 end

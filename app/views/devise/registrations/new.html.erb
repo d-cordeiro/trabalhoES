@@ -1,0 +1,30 @@
+<h2>Sign up</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+
+    <p><%= f.label :username %><br />
+      <%= f.text_field :username %></p>
+
+    <div><%= f.label :email %><br />
+      <%= f.email_field :email, :autofocus => true %></div>
+
+    <p><%= f.label :date_of_birth %><br />
+      <%= f.date_select :date_of_birth, :order => [:day, :month, :year], :start_year => Date.current.year, :end_year => 1900 %></p>
+
+    <div><%= f.label :password %><br />
+      <%= f.password_field :password %></div>
+
+    <div><%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation %></div>
+
+    <br>
+    <%= recaptcha_tags %>
+    <input type="checkbox" name="checkbox" value="check">Concordo com os termos de utilização e com a política de privacidade. <br> <br>
+    <input type="submit" name="email_submit" value="Sign up"
+           onclick="if(!this.form.checkbox.checked){alert('Tem de aceitar os termos.');return false}"
+    />
+
+<% end %>
+
+<%= render "devise/shared/links" %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131205165725) do
+ActiveRecord::Schema.define(:version => 20131207112025) do
 
   create_table "accounts", :force => true do |t|
     t.string   "name"
@@ -44,6 +44,24 @@ ActiveRecord::Schema.define(:version => 20131205165725) do
     t.integer  "video_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "user_name"
+  end
+
+  create_table "evaluation_comments", :force => true do |t|
+    t.string   "user"
+    t.integer  "eval"
+    t.integer  "comment_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "video_id"
+  end
+
+  create_table "evaluations", :force => true do |t|
+    t.string   "user"
+    t.integer  "eval"
+    t.integer  "video_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "playlists", :force => true do |t|
@@ -73,6 +91,8 @@ ActiveRecord::Schema.define(:version => 20131205165725) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.date     "date_of_birth"
+    t.string   "username"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

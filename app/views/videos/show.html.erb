@@ -3,9 +3,13 @@
 <div class="video">
 <div class="video_info">
 
-  <video id="<%= @video.id %>" class="video-js vjs-default-skin vjs-big-play-centered" controls width="640" height="380" poster="<%= escape_javascript(asset_path(@video.image_path)) %>" data-setup='{"preload":true, "controls":true}'>
-    <source src="<%= escape_javascript(asset_path(@video.path)) -%>" type="video/mp4"/>
-  </video>
+  <%if @video.privacy && (user_signed_in? || @idd < 18) %>
+      <p>Restrição de idade neste vídeo</p>
+  <% else %>
+      <video id="<%= @video.id %>" class="video-js vjs-default-skin vjs-big-play-centered" controls width="640" height="380" poster="<%= escape_javascript(asset_path(@video.image_path)) %>" data-setup='{"preload":true, "controls":true}'>
+        <source src="<%= escape_javascript(asset_path(@video.path)) -%>" type="video/mp4"/>
+      </video>
+  <% end %>
 
   <div class="border_side">
   <div class="video_attr">
@@ -25,24 +29,41 @@
           </p>
         </div>
 
-
+      <% if user_signed_in? %>
         <div class="video_like">
-            <%= form_tag "/videos/like", :method => 'get', :remote => true do %>
+            <%= form_tag "/evaluations", :method => 'post' do %>
                 <p>
-                  <%= hidden_field_tag 'video_id', @video.id  %>
-                  <%= submit_tag "Like", :class => 'eval_form_tag' %>
+                  <%= hidden_field_tag 'user', current_user.email %>
+                  <%= hidden_field_tag 'eval', 1  %>
+                  <%= hidden_field_tag 'video_id', @video.id %>
+
+                  <% if @evaluation.blank? || @evaluation.eval == 0 %>
+                      <%= submit_tag "Like", :class => 'eval_form_tag' %>
+                  <% else %>
+                      <%= submit_tag "Like", :class => 'eval_form_tag eval_form_tag_selected' %>
+                  <% end %>
                 </p>
             <% end %>
         </div>
 
         <div class="video_dislike">
-            <%= form_tag "/videos/dislike", :method => 'get', :remote => true do %>
-                <p>
-                  <%= hidden_field_tag 'video_id', @video.id  %>
-                  <%= submit_tag "Dislike", :class => 'eval_form_tag' %>
-                </p>
-            <% end %>
+          <%= form_tag "/evaluations", :method => 'post' do %>
+              <p>
+                <%= hidden_field_tag 'user', current_user.email %>
+                <%= hidden_field_tag 'eval', 0  %>
+                <%= hidden_field_tag 'video_id', @video.id %>
+
+                <% if @evaluation.blank? || @evaluation.eval == 1 %>
+                    <%= submit_tag "Dislike", :class => 'eval_form_tag' %>
+                <% else %>
+                    <%= submit_tag "Dislike", :class => 'eval_form_tag eval_form_tag_selected' %>
+                <% end %>
+              </p>
+          <% end %>
         </div>
+      <% else %>
+          <span><u>É necessário ter a sessão iniciada para poder avaliar o vídeo.</u></span>
+      <% end %>
     </div>
 
     <div class="border_bottom">
@@ -58,56 +79,67 @@
             <% if user_signed_in? %>
                 <%= form_tag("/comments", :method => "post") do %>
                     <%= hidden_field_tag 'video_id', @video.id  %>
+                    <%= hidden_field_tag 'user_name', current_user.username  %>
                     <%= text_field_tag(:comment) %>
                     <%= submit_tag("Comment") %>
                 <% end %>
             <% else %>
               <p><u>É necessário ter a sessão iniciada para poder comentar.</u></p>
             <% end %>
-
             <%= flash[:error] %>
         </div>
 
         <% if @video.comments.blank? %>
-        <p>Sem comentários</p>
+        <p class="border_top">Sem comentários</p>
         <% else %>
-            <% @comments.each do |comment| %>
-              <div class="video_c border_top">
+          <% @comments.each do |comment| %>
+                  <div class="video_c border_top">
 
-                <div>
-                    <p class="video_comment"><%= comment.comment %></p>
+                    <div>
+                      <p class="video_comment"><%= comment.comment %> <b>- by <%= comment.user_name %></b></p>
 
-                    <p class="comment_eval">
-                      <b>Likes:</b>
-                      <%= comment.likes %>
-                      <b>Dislikes:</b>
-                      <%= comment.dislikes %>
-                    </p>
-                </div>
+                      <p class="comment_eval">
+                        <b>Likes:</b>
+                        <%= comment.likes %>
+                        <b>Dislikes:</b>
+                        <%= comment.dislikes %>
+                      </p>
+                    </div>
 
-                <div class="comment_like">
-                    <%= form_tag "/comments/clike", :method => 'get' do %>
-                        <p>
-                          <%= hidden_field_tag 'video_id', @video.id  %>
-                          <%= hidden_field_tag 'comment_id', comment.id  %>
-                          <%= submit_tag "Like", :class => 'eval_form_tag' %>
-                        </p>
+                    <% if user_signed_in? %>
+                        <div class="comment_like">
+                          <%= form_tag "/evaluation_comments", :method => 'post' do %>
+                              <p>
+                                <%= hidden_field_tag 'user', current_user.email %>
+                                <%= hidden_field_tag 'eval', 1  %>
+                                <%= hidden_field_tag 'video_id', @video.id %>
+                                <%= hidden_field_tag 'comment_id', comment.id  %>
+                                <%= submit_tag "Like", :class => 'eval_form_tag' %>
+                                <!-- % if comment.eval.nil? || comment.eval == 0 %>
+                                    %= submit_tag "Like", :class => 'eval_form_tag' %>
+                                % else %>
+                                    %= submit_tag "Like", :class => 'eval_form_tag eval_form_tag_selected' %>
+                                % end %>    -->
+                              </p>
+                          <% end %>
+                        </div>
+
+                        <div class="comment_dislike">
+                          <%= form_tag "/evaluation_comments", :method => 'post' do %>
+                              <p>
+                                <%= hidden_field_tag 'user', current_user.email %>
+                                <%= hidden_field_tag 'eval', 0  %>
+                                <%= hidden_field_tag 'video_id', @video.id %>
+                                <%= hidden_field_tag 'comment_id', comment.id  %>
+                                <%= submit_tag "Dislike", :class => 'eval_form_tag' %>
+                              </p>
+                          <% end %>
+                        </div>
                     <% end %>
-                </div>
-
-                <div class="comment_dislike">
-                    <%= form_tag "/comments/cdislike", :method => 'get' do %>
-                        <p>
-                          <%= hidden_field_tag 'video_id', @video.id  %>
-                          <%= hidden_field_tag 'comment_id', comment.id  %>
-                          <%= submit_tag "Dislike", :class => 'eval_form_tag' %>
-                        </p>
-                    <% end %>
-                </div>
-              </div>
-            <% end %>
-            <%= will_paginate @comments, renderer: BootstrapPagination::Rails %>
-    <% end %>
+                  </div>
+          <% end %>
+          <%= will_paginate @comments, renderer: BootstrapPagination::Rails %>
+      <% end %>
     </div>
   </div>
   </div>
@@ -127,5 +159,3 @@
   <% end %>
 </div>
 </div>
-
-

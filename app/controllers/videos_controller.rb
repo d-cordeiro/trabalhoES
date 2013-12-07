@@ -16,10 +16,19 @@ class VideosController < ApplicationController
 
     @video = Video.find(params[:id])
     @video.increment!(:views)
+
+    if user_signed_in?
+      dob = current_user.date_of_birth
+      now = Time.now.utc.to_date
+      @idd = now.year - dob.year - ((now.month > dob.month || (now.month == dob.month && now.day >= dob.day)) ? 0 : 1)
+
+      @evaluation = Evaluation.find_by_user_and_video_id(current_user.email, params[:id])
+    end
+
     @related_videos = Video.find_all_by_category(@video.category)
 
     @comments = @video.comments
-    @comments = Comment.paginate(:page => params[:page], :per_page => 5)
+    @comments = @comments.paginate(:page => params[:page], :per_page => 5)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -85,17 +94,5 @@ class VideosController < ApplicationController
       format.html { redirect_to videos_url }
       format.json { head :no_content }
     end
-  end
-
-  def like
-    @video = Video.find(params[:video_id])
-    @video.increment!(:likes)
-    redirect_to @video
-  end
-
-  def dislike
-    @video = Video.find(params[:video_id])
-    @video.increment!(:dislikes)
-    redirect_to @video
   end
 end
