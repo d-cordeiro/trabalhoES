@@ -33,7 +33,7 @@ Video.create(:playlist_id => '0', :path => 'adele.mp4' ,:age => '0', :image_path
 Video.create(:playlist_id => '0', :path => 'batman.mp4' ,:age => '0', :image_path => 'batman.jpg', :category=> 'Movies', :description=>'Batman- Arkham Origins -- Full Trailer', :dislikes =>'5', :has_comments=>true, :likes =>'2200', :privacy => false, :title => 'Batman- Arkham Origins', :featured=>true, :views=>0);
 Video.create(:playlist_id => '0', :path => 'riddick.mp4' ,:age => '0', :image_path => 'riddick.jpg', :category=> 'Movies', :description=>'Riddick - Debut Trailer', :dislikes =>'5', :has_comments=>true, :likes =>'2200', :privacy => false, :title => 'Riddick Trailer', :featured=>true, :views=>0);
 Video.create(:playlist_id => '0', :path => 'top.mp4' ,:age => '0', :image_path => 'top.jpg', :category=> 'Sport', :description=>'Top 10 NBA Plays- November 15th', :dislikes =>'5', :has_comments=>true, :likes =>'2200', :privacy => false, :title => 'Top 10 NBA Plays- November 15th', :featured=>true, :views=>0);
-Video.create(:playlist_id => '0', :path => 'swim.mp4' ,:age => '0', :image_path => 'swim.jpg', :category=> 'Sport', :description=>'Freestyle - Playing with Surface Area', :dislikes =>'5', :has_comments=>true, :likes =>'2200', :privacy => false, :title => 'Freestyle - Playing with Surface Area', :featured=>true, :views=>0);
+Video.create(:playlist_id => '0', :path => 'swim.mp4' ,:age => '0', :image_path => 'swim.jpg', :category=> 'Sport', :description=>'Freestyle - Playing with Surface Area', :dislikes =>'5', :has_comments=>true, :likes =>'2200', :privacy => true, :title => 'Freestyle - Playing with Surface Area', :featured=>true, :views=>0);
 Video.create(:playlist_id => '0', :path => 'german.mp4' ,:age => '0', :image_path => 'german.jpg', :category=> 'Sport', :description=>'Unbelievable point by Apolonia at 2013 German Open', :dislikes =>'5', :has_comments=>true, :likes =>'2200', :privacy => false, :title => 'Unbelievable point by Apolonia at 2013 German', :featured=>true, :views=>0);
 Video.create(:playlist_id => '0', :path => 'ronaldo.mp4' ,:age => '0', :image_path => 'ronaldo.jpg', :category=> 'Sport', :description=>'Cristiano Ronaldo gives Lustig (Sweden) a little headbutt before making fun of him for playacting', :dislikes =>'5', :has_comments=>true, :likes =>'2200', :privacy => false, :title => 'Cristiano Ronaldo', :featured=>true, :views=>0);
 Video.create(:playlist_id => '0', :path => 'robocot.mp4' ,:age => '0', :image_path => 'robocot.jpg', :category=> 'Movies', :description=>'Robocop Trailer 2014 Movie - Official 2013 Teaser [HD](1)', :dislikes =>'5', :has_comments=>true, :likes =>'2200', :privacy => false, :title => 'Robocop Trailer', :featured=>true, :views=>0);
@@ -45,6 +45,6 @@ Related.create(:related_id => '1', :video_id=> '2');
 
 ###################################### Comment ######################################
 
-Comment.create(:comment => 'Adorei o video!', :dislikes => '0', :likes => '5', :video_id => '1');
-Comment.create(:comment => 'Adorei o video!', :dislikes => '0', :likes => '5', :video_id => '1');
-Comment.create(:comment => 'Este filme tem que ganhar um oscar! Simplesmente amei!', :dislikes => '0', :likes => '15', :video_id => '2');
+#Comment.create(:comment => 'Adorei o video!', :dislikes => '0', :likes => '5', :video_id => '1');
+#Comment.create(:comment => 'Adorei o video!', :dislikes => '0', :likes => '5', :video_id => '1');
+#Comment.create(:comment => 'Este filme tem que ganhar um oscar! Simplesmente amei!', :dislikes => '0', :likes => '15', :video_id => '2');

@@ -3,8 +3,9 @@
 <div class="video">
 <div class="video_info">
 
-  <%if @video.privacy && (user_signed_in? || @idd < 18) %>
-      <p>Restrição de idade neste vídeo</p>
+  <% if @video.privacy && (!user_signed_in? || @idd.to_f < 18) %>
+      <h3><b><u>Aviso de Conteúdo</u></b></h3>
+      <p><u>Este vídeo pode ser impróprio para alguns utilizadores.</u></p>
   <% else %>
       <video id="<%= @video.id %>" class="video-js vjs-default-skin vjs-big-play-centered" controls width="640" height="380" poster="<%= escape_javascript(asset_path(@video.image_path)) %>" data-setup='{"preload":true, "controls":true}'>
         <source src="<%= escape_javascript(asset_path(@video.path)) -%>" type="video/mp4"/>
