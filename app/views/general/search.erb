@@ -1,12 +1,26 @@
-<table>
 
-  <tr>
 
+<% if @list.empty? %>
+    <table>
+      <tr>
     <td class="category_bar">
       <% @categories.each do |category| %>
-          <p><%= category %></p>
+          <p class="category_name"><%= link_to category, {:controller => "general", :action => "searchcategory", :q => category} %>  </p>
       <% end %>
     </td>
+    <td> <p> A sua pesquisa não encontrou resultados. Por favor, tente uma nova pesquisa.</p>  </td>
+    </tr></table>
+<% else %>
+
+  <table>
+
+  <tr>
+    <td class="category_bar">
+      <% @categories.each do |category| %>
+          <p class="category_name"><%= link_to category, {:controller => "general", :action => "searchcategory", :q => category} %>  </p>
+      <% end %>
+    </td>
+
 
     <td>
       <table>
@@ -26,3 +40,4 @@
       </table>
     </td>
 </table>
+<% end %>
