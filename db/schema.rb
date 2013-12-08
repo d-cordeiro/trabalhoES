@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131207112025) do
+ActiveRecord::Schema.define(:version => 20131208191328) do
 
   create_table "accounts", :force => true do |t|
     t.string   "name"
@@ -107,13 +107,14 @@ ActiveRecord::Schema.define(:version => 20131207112025) do
     t.boolean  "has_comments"
     t.integer  "likes"
     t.integer  "dislikes"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
     t.boolean  "featured"
     t.string   "path"
     t.integer  "playlist_id"
     t.string   "image_path"
     t.integer  "views"
+    t.string   "panda_video_id"
   end
 
 end

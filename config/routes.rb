@@ -12,6 +12,7 @@ Youtbe::Application.routes.draw do
   root to: "general#home"
 
   get "general/search"
+  get "videos/addVideo"
   get  "general/searchcategory"
   get "general/home"
 
