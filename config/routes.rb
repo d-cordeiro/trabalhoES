@@ -9,9 +9,10 @@ Youtbe::Application.routes.draw do
   devise_for :users
   devise_for :users, :controllers => { :registrations => "registrations" }
 
+  root to: "general#home"
+
   match "/panda/authorize_upload", :to => "panda#authorize_upload"
   resources :videos
-  root :to => "videos#new"
 
   get "general/search"
   get "videos/addVideo"
