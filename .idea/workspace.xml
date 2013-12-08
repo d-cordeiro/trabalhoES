@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="013c6dbf-1696-4623-9a79-0bbcc3a65caf" name="Default" comment="lots of things">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/panda.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/panda.yml" />
-      <change type="DELETED" beforePath="C:\Users\Leonor\RubymineProjects\trabalhoES\app\views\videos\addVideo.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Youtbe.iml" afterPath="$PROJECT_DIR$/.idea/Youtbe.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/new.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/show.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/videos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
+    <list default="true" id="013c6dbf-1696-4623-9a79-0bbcc3a65caf" name="Default" comment="lots of things&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Youtbe.iws" />
@@ -58,24 +47,31 @@
         <entry file="file://$PROJECT_DIR$/app/views/videos/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="32" column="9" selection-start="954" selection-end="954" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="646">
-              <folding />
+              <folding>
+                <marker date="1386534887727" expanded="true" signature="454:953" placeholder="..." />
+                <marker date="1386534887727" expanded="true" signature="490:942" placeholder="{&quot;buttonId&quot;: 'browse'...}" />
+                <marker date="1386534887727" expanded="true" signature="598:752" placeholder="{...}" />
+                <marker date="1386534887727" expanded="true" signature="644:741" placeholder="{...}" />
+                <marker date="1386534887727" expanded="true" signature="796:853" placeholder="{...}" />
+                <marker date="1386534887727" expanded="true" signature="887:936" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="panda_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="panda_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/panda_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="611" selection-end="611" vertical-scroll-proportion="0.6049822" vertical-offset="0" max-vertical-offset="562">
+            <state line="20" column="0" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="panda.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="panda.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/panda.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="31" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+            <state line="3" column="31" selection-start="116" selection-end="116" vertical-scroll-proportion="0.090747334" vertical-offset="0" max-vertical-offset="562">
               <folding />
             </state>
           </provider>
@@ -237,28 +233,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Youtbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trabalhoES" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="videos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -659,7 +633,11 @@
       <created>1386528628532</created>
       <updated>1386528628532</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lots of things">
+      <created>1386535181497</created>
+      <updated>1386535181497</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -686,6 +664,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -701,7 +680,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -817,7 +795,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/log/development.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="3769" selection-end="3769" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state line="45" column="0" selection-start="3769" selection-end="3769" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/development.sqlite3">
@@ -867,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/panda.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="26" selection-start="307" selection-end="307" vertical-scroll-proportion="0.3024911" vertical-offset="51" max-vertical-offset="1904">
@@ -898,13 +871,27 @@
     <entry file="file://$PROJECT_DIR$/app/views/videos/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="9" selection-start="954" selection-end="954" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="646">
-          <folding />
+          <folding>
+            <marker date="1386534887727" expanded="true" signature="454:953" placeholder="..." />
+            <marker date="1386534887727" expanded="true" signature="490:942" placeholder="{&quot;buttonId&quot;: 'browse'...}" />
+            <marker date="1386534887727" expanded="true" signature="598:752" placeholder="{...}" />
+            <marker date="1386534887727" expanded="true" signature="644:741" placeholder="{...}" />
+            <marker date="1386534887727" expanded="true" signature="796:853" placeholder="{...}" />
+            <marker date="1386534887727" expanded="true" signature="887:936" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/panda_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="611" selection-end="611" vertical-scroll-proportion="0.6049822" vertical-offset="0" max-vertical-offset="562">
+        <state line="20" column="0" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/panda.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="116" selection-end="116" vertical-scroll-proportion="0.090747334" vertical-offset="0" max-vertical-offset="562">
           <folding />
         </state>
       </provider>
