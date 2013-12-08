@@ -19,18 +19,25 @@
     /* border-radius:25px;     */
 }
 
-.category_bar{
-    width: 100px;
 
-    text-align:justify;
-    vertical-align:top ;
-}
 
 #search_bar{
     background-color: lightpink;
     border: 2px solid;
 }
 
+/************************************************************************************/
+
+.category_bar{
+    width: 200px;
+    text-align:justify;
+    vertical-align:top ;
+}
+
+
+.category_name {
+
+}
 
 
 #____________Video____________

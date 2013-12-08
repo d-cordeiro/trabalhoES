@@ -6,4 +6,9 @@ class GeneralController < ApplicationController
   def search
     @list = Video.where('title like ?', '%'+params[:q]+'%').order('title ASC');
   end
+
+  def search_music
+    @list = Video.where('category like Music').order('title ASC');
+  end
+
 end

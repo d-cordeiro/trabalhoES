@@ -4,7 +4,10 @@
 
     <td class="category_bar">
       <% @categories.each do |category| %>
-          <p><%= category %></p>
+
+
+          <p class="category_name"><%= link_to category, {:controller => "general", :action => "search_category"} %>  </p>
+
       <% end %>
     </td>
 
