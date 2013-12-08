@@ -1,5 +1,33 @@
-<h1>New video</h1>
+<%= form_for @video do |f| %>
 
-<%= render 'form' %>
+    <!-- field where the video ID will be stored after the upload -->
+    <input type="hidden" name="panda_video_id"/>
 
-<%= link_to 'Back', videos_path %>
+    <label>Title</label>
+    <input type="text" name='video[title]' placeholder="Give a title">
+
+    <!-- upload progress bar (optional) -->
+    <div class='progress'><span id="progress-bar" class='bar'></span></div>
+
+    <!-- file selector -->
+    <div id="browse">Choose file</div>
+
+<% end %>
+
+<script>
+    var upl = panda.uploader.init({
+        'buttonId': 'browse',
+        'progressBarId': 'progress-bar',
+        'onQueue': function(files) {
+            $.each(files, function(i, file) {
+                upl.setPayload(file, {'csrf': "<%= form_authenticity_token %>"});
+            })
+        },
+        'onSuccess': function(file, data) {
+            $("#panda_video_id").val(data.id)
+        },
+        'onComplete': function(){
+            $("#new_video").submit();
+        }
+    });
+</script>

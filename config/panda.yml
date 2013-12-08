@@ -1,0 +1,4 @@
+development:
+  access_key: Your Panda access key
+  secret_key: Your Panda secret key
+  cloud_id: Your Panda cloud id

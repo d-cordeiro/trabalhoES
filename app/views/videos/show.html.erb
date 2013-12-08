@@ -2,6 +2,8 @@
 
 <div class="video">
 <div class="video_info">
+  <h2><%= @video.title %></h2>
+  <p><%= h @video.panda_video.inspect %></p>
 
   <% if @video.privacy && (!user_signed_in? || @idd.to_f < 18) %>
       <h3><b><u>Aviso de Conteúdo</u></b></h3>

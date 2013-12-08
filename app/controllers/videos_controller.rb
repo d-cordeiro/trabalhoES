@@ -16,6 +16,8 @@ class VideosController < ApplicationController
 
     @video = Video.find(params[:id])
     @video.increment!(:views)
+    @original_video = @video.panda_video
+    @h264_encoding = @original_video.encodings["h264"]
 
     if user_signed_in?
       dob = current_user.date_of_birth

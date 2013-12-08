@@ -3,8 +3,9 @@
 <head>
   <title>Youtube</title>
   <%= stylesheet_link_tag "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "defaults" %>
   <%= javascript_include_tag "video.js" %>
+  <script src="//cdn.pandastream.com/u/2.0/panda-uploader.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -26,6 +27,7 @@
         <div id="user_nav">
           <% if user_signed_in? %>
               Bem vindo, <%= current_user.username %>!
+              <%= button_to "Carregar Video", new_video_path, :method => :get %>
               <%= link_to "Terminar sessão", destroy_user_session_path, :method => :delete %>
           <% else %>
               <%= link_to "Criar conta", new_user_registration_path %> <%= link_to "Iniciar sessão", new_user_session_path %>
