@@ -16,8 +16,6 @@ class VideosController < ApplicationController
 
     @video = Video.find(params[:id])
     @video.increment!(:views)
-    @original_video = @video.panda_video
-    @h264_encoding = @original_video.encodings["h264"]
 
     if user_signed_in?
       dob = current_user.date_of_birth
@@ -38,24 +36,16 @@ class VideosController < ApplicationController
     end
   end
 
-  def new
-    @video = Video.new
-  end
-
-  def create
-    @video = Video.create!(params[:video])
-    redirect_to :action => :show, :id => @video.id
-  end
   # GET /videos/new
   # GET /videos/new.json
-#  def new
-  #  @video = Video.new
+  def new
+    @video = Video.new
 
-   # respond_to do |format|
-  #    format.html # new.html.erb
-   #   format.json { render json: @video }
- #   end
-  #end
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @video }
+    end
+  end
 
   # GET /videos/1/edit
   def edit
@@ -64,19 +54,19 @@ class VideosController < ApplicationController
 
   # POST /videos
   # POST /videos.json
-  #def create
-   # @video = Video.new(params[:video])
+  def create
+    @video = Video.new(params[:video])
 
-   # respond_to do |format|
-   #   if @video.save
-    #    format.html { redirect_to @video, notice: 'Video was successfully created.' }
-   #     format.json { render json: @video, status: :created, location: @video }
-   #   else
-   #     format.html { render action: "new" }
-  #      format.json { render json: @video.errors, status: :unprocessable_entity }
-     # end
-   ## end
-  #end
+    respond_to do |format|
+      if @video.save
+        format.html { redirect_to @video, notice: 'Video was successfully created.' }
+        format.json { render json: @video, status: :created, location: @video }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @video.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
   # PUT /videos/1
   # PUT /videos/1.json
