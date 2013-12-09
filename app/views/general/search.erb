@@ -3,11 +3,16 @@
 <% if @list.empty? %>
     <table>
       <tr>
-    <td class="category_bar">
-      <% @categories.each do |category| %>
-          <p class="category_name"><%= link_to category, {:controller => "general", :action => "searchcategory", :q => category} %>  </p>
-      <% end %>
-    </td>
+        <td class="category_bar">
+          <div class="category_bar bar">
+            <% @categories.each do |category| %>
+                <p class="category_name"><%= link_to category, {:controller => "general", :action => "searchcategory", :q => category} %>  </p>
+            <% end %>
+          </div>
+        </td>
+
+
+
     <td> <p> A sua pesquisa não encontrou resultados. Por favor, tente uma nova pesquisa.</p>  </td>
     </tr></table>
 <% else %>
