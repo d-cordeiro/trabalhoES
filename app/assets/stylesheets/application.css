@@ -21,7 +21,7 @@
 
 
 .youtube_space_icon{
-width: 200px;
+    width: 200px;
 }
 
 .search_space_bar{
@@ -30,8 +30,7 @@ width: 200px;
  }
 
  #search_bar{
-     background-color: lightgrey;
-     border: 2px solid;
+     background-color: rgb(240,240,240);
      padding: 7px 2px 7px 32px;
  }
 

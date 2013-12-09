@@ -46,7 +46,8 @@
               Bem vindo, <%= current_user.username %>!
               <%= link_to "Terminar sessão", destroy_user_session_path, :method => :delete %>
           <% else %>
-              <%= link_to "Criar conta", new_user_registration_path %> <%= link_to "Iniciar sessão", new_user_session_path %>
+              <%= link_to "Criar conta", new_user_registration_path %>
+              <%= link_to "Iniciar sessão", new_user_session_path %>
           <% end %>
         </div>
       </td>
