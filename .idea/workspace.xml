@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="013c6dbf-1696-4623-9a79-0bbcc3a65caf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Youtbe.iws" />
@@ -38,7 +36,7 @@
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/views/general/_listing.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385142410481" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/views/general/_featured.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385142410481" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/.idea/DiscoverLisbon.iml" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385061550685" ignored="false" />
-    <file path="/Dummy.txt" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386608559387" ignored="false" />
+    <file path="/Dummy.txt" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386608697553" ignored="false" />
     <file path="/item.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385060552712" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/assets/stylesheets/sliderwall_bullets_skin.css" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384898802286" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/db/seeds.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385159597077" ignored="false" />
@@ -150,7 +148,7 @@
       <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="14" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.4592934">
+            <state line="49" column="14" selection-start="1049" selection-end="1049" vertical-scroll-proportion="1.1290323">
               <folding />
             </state>
           </provider>
@@ -844,7 +842,11 @@
       <created>1386608592671</created>
       <updated>1386608592671</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="css finais">
+      <created>1386608700407</created>
+      <updated>1386608700407</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -1069,7 +1071,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="14" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.4592934">
+        <state line="49" column="14" selection-start="1049" selection-end="1049" vertical-scroll-proportion="1.1290323">
           <folding />
         </state>
       </provider>
