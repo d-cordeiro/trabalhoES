@@ -6,9 +6,7 @@ Youtbe::Application.routes.draw do
   resources :evaluations
 
 
-  devise_for :users
   devise_for :users, :controllers => { :registrations => "registrations" }
-
 
 
   match "/panda/authorize_upload", :to => "panda#authorize_upload"
