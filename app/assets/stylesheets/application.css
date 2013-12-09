@@ -44,6 +44,13 @@
      display: inline-block;
      text-align: center;
  }
+
+ .width_terminar{
+     padding: 2px 2px 2px 2px;
+     width: 150px;
+     display: inline-block;
+     text-align: center;
+ }
 .session_space_bar{
        width: 450px
  }
