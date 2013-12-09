@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="013c6dbf-1696-4623-9a79-0bbcc3a65caf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/general/_listing.erb" afterPath="$PROJECT_DIR$/app/views/general/_listing.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/general/search.erb" afterPath="$PROJECT_DIR$/app/views/general/search.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/general/searchcategory.erb" afterPath="$PROJECT_DIR$/app/views/general/searchcategory.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/general/home.html.erb" afterPath="$PROJECT_DIR$/app/views/general/home.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Youtbe.iws" />
@@ -19,14 +20,14 @@
     <file path="/video.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385412984990" ignored="false" />
     <file path="/routes.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386537732040" ignored="false" />
     <file path="/Gemfile" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384799051221" ignored="false" />
-    <file path="/home.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386594713569" ignored="false" />
+    <file path="/home.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386596521248" ignored="false" />
     <file path="/application.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386593338295" ignored="false" />
     <file path="/seeds.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386425868029" ignored="false" />
     <file path="/20131114222704_add_path_to_video.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384468229157" ignored="false" />
     <file path="/20131114222853_add_playlist_id_to_video.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384468312097" ignored="false" />
     <file path="/20131114230946_add_image_path_to_video.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384470602883" ignored="false" />
-    <file path="/application.css" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386595450337" ignored="false" />
-    <file path="/_listing.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385167452754" ignored="false" />
+    <file path="/application.css" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386596304453" ignored="false" />
+    <file path="/_listing.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386596694778" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/config/routes.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384884955704" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/views/layouts/application.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385061541164" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/views/general/item.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385142410481" ignored="false" />
@@ -39,7 +40,7 @@
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/views/general/_listing.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385142410481" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/views/general/_featured.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385142410481" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/.idea/DiscoverLisbon.iml" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385061550685" ignored="false" />
-    <file path="/Dummy.txt" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386595548789" ignored="false" />
+    <file path="/Dummy.txt" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386595753145" ignored="false" />
     <file path="/item.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385060552712" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/assets/stylesheets/sliderwall_bullets_skin.css" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384898802286" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/db/seeds.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385159597077" ignored="false" />
@@ -105,16 +106,16 @@
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+            <state line="47" column="14" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/general/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="21" selection-end="303" vertical-scroll-proportion="-2.5">
+            <state line="40" column="48" selection-start="933" selection-end="933" vertical-scroll-proportion="0.8769231">
               <folding />
             </state>
           </provider>
@@ -129,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchcategory.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="searchcategory.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/general/searchcategory.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="9" selection-start="313" selection-end="313" vertical-scroll-proportion="0.23076923">
+            <state line="10" column="9" selection-start="313" selection-end="313" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -142,6 +143,15 @@
         <entry file="file://$PROJECT_DIR$/app/views/general/search.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="14" selection-start="55" selection-end="367" vertical-scroll-proportion="-6.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_listing.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/general/_listing.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="47" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-19.375">
               <folding />
             </state>
           </provider>
@@ -174,14 +184,14 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/videos/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/general_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/general/_listing.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/general/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
         <option value="$PROJECT_DIR$/app/views/general/search.erb" />
         <option value="$PROJECT_DIR$/app/views/general/searchcategory.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/general/_listing.erb" />
+        <option value="$PROJECT_DIR$/app/views/general/home.html.erb" />
       </list>
     </option>
   </component>
@@ -776,7 +786,11 @@
       <created>1386595558826</created>
       <updated>1386595558826</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="css barra categorias">
+      <created>1386595755390</created>
+      <updated>1386595755390</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -889,13 +903,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/session.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/relateds.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -966,23 +973,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="17" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/general/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="21" selection-end="303" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
@@ -996,7 +989,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/general/searchcategory.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="313" selection-end="313" vertical-scroll-proportion="0.23076923">
+        <state line="10" column="9" selection-start="313" selection-end="313" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/general/_listing.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="47" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-19.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="14" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/general/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="48" selection-start="933" selection-end="933" vertical-scroll-proportion="0.8769231">
           <folding />
         </state>
       </provider>

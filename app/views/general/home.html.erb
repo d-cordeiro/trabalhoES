@@ -5,7 +5,7 @@
     <td class="category_bar">
       <div class="category_bar bar">
       <% @categories.each do |category| %>
-          <p class="category_name"><%= link_to category, {:controller => "general", :action => "searchcategory", :q => category} %>  </p>
+          <p class="category_name"> <%= link_to category, {:controller => "general", :action => "searchcategory", :q => category} %> </p>
       <% end %>
       </div>
     </td>
@@ -13,9 +13,10 @@
     <td>
       <table class="soft_border">
         <tr>
+
           <td></td>
           <td>
-            <p>Movies</p>
+            <p class="title_category_home">Movies</p>
             <% @list = @featured.where(:category => 'Movies').limit(3) %>
             <%= render 'listing' %>
           </td>
@@ -24,16 +25,20 @@
         <tr>
           <td></td>
           <td>
-            <p>Music</p>
+
+            <p class="title_category_home">Music</p>
+
             <% @list = @featured.where(:category => 'Music').limit(3) %>
             <%= render 'listing' %>
+
           </td>
+
         </tr>
 
         <tr>
           <td></td>
           <td>
-            <p>Sport</p>
+            <p class="title_category_home">Sport</p>
             <% @list = @featured.where(:category => 'Sport').limit(3) %>
             <%= render 'listing' %>
           </td>

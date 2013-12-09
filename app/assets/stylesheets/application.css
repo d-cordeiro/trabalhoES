@@ -45,15 +45,22 @@
      width: 200px;
      text-align:justify;
      vertical-align:top ;
-     height:190px;
+     height:110px;
      /*border:1px solid red;   */
+
  }
+
+ .title_category_home{
+     font-weight: bold;
+ }
+
   .bar{
       background-color: rgb(188,143,143);
   }
 
  .category_name {
      padding: 5px 5px 5px 5px;
+     font-weight: bold;
  }
 
  .youtube_icon img:hover {
