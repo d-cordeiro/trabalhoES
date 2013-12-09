@@ -40,14 +40,14 @@
 
         </form>
       </td>
-      <td>
+      <td class="session_space_bar">
         <div id="user_nav">
           <% if user_signed_in? %>
               Bem vindo, <%= current_user.username %>!
-              <%= link_to "Terminar sessão", destroy_user_session_path, :method => :delete %>
+              <div class="button_search "><%= link_to "Terminar sessão", destroy_user_session_path, :method => :delete %> </div>
           <% else %>
-              <%= link_to "Criar conta", new_user_registration_path %>
-              <%= link_to "Iniciar sessão", new_user_session_path %>
+              <div class="button_search width"><%= link_to "Criar conta", new_user_registration_path %>   </div>
+              <div class="button_search width"><%= link_to "Iniciar sessão", new_user_session_path %> </div>
           <% end %>
         </div>
       </td>
