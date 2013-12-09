@@ -16,6 +16,10 @@
     font-weight: bold;
 }
 
+.padding_video{
+    padding: 0px 0px 10px 0px;
+}
+
 .soft_border{
     padding: 10px;
     border-left:2px solid;
