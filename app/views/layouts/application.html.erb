@@ -11,13 +11,11 @@
 
 
       function  contentLength(q){
-
           if(q.value ==  "")  {
               return false;
           }
 
           return true;
-
       }
   </script>
 
@@ -37,8 +35,8 @@
       <td>
         <form name='selection' action='/general/search' method='get' onsubmit="return contentLength(<%= :q %> );"  >
 
-          Pesquisa: <input type="text" name=<%=:q%>><br>
-          <input type="submit" value="Search">
+          Pesquisa: <input type="text" name=<%=:q%>>
+          <input type="submit" value="Search"  class="button_search">
 
         </form>
       </td>
