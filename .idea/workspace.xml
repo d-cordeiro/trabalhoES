@@ -4,6 +4,7 @@
     <list default="true" id="013c6dbf-1696-4623-9a79-0bbcc3a65caf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Youtbe.iws" />
@@ -18,12 +19,12 @@
     <file path="/routes.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386537732040" ignored="false" />
     <file path="/Gemfile" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384799051221" ignored="false" />
     <file path="/home.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386526923026" ignored="false" />
-    <file path="/application.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386592388684" ignored="false" />
+    <file path="/application.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386592896509" ignored="false" />
     <file path="/seeds.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386425868029" ignored="false" />
     <file path="/20131114222704_add_path_to_video.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384468229157" ignored="false" />
     <file path="/20131114222853_add_playlist_id_to_video.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384468312097" ignored="false" />
     <file path="/20131114230946_add_image_path_to_video.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384470602883" ignored="false" />
-    <file path="/application.css" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386592601666" ignored="false" />
+    <file path="/application.css" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386592865482" ignored="false" />
     <file path="/_listing.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385167452754" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/config/routes.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384884955704" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/views/layouts/application.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385061541164" ignored="false" />
@@ -37,7 +38,7 @@
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/views/general/_listing.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385142410481" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/views/general/_featured.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385142410481" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/.idea/DiscoverLisbon.iml" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385061550685" ignored="false" />
-    <file path="/Dummy.txt" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386591974807" ignored="false" />
+    <file path="/Dummy.txt" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1386592633495" ignored="false" />
     <file path="/item.html.erb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385060552712" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/app/assets/stylesheets/sliderwall_bullets_skin.css" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1384898802286" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../IPM/projetoDesenvolvimento/DiscoverLisbon/db/seeds.rb" changelist="013c6dbf-1696-4623-9a79-0bbcc3a65caf" time="1385159597077" ignored="false" />
@@ -102,7 +103,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="67" selection-start="1078" selection-end="1078" vertical-scroll-proportion="-13.75">
+            <state line="37" column="46" selection-start="1056" selection-end="1056" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
@@ -111,7 +112,7 @@
       <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="14" selection-start="760" selection-end="760" vertical-scroll-proportion="0.57863504">
+            <state line="38" column="24" selection-start="923" selection-end="923" vertical-scroll-proportion="0.84569734">
               <folding />
             </state>
           </provider>
@@ -726,7 +727,11 @@
       <created>1386591983991</created>
       <updated>1386591983991</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="css barra principal">
+      <created>1386592636356</created>
+      <updated>1386592636356</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -815,7 +820,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="trabalho todo funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="css barra principal" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -832,6 +837,7 @@
     <MESSAGE value="lots of things" />
     <MESSAGE value="inicio add" />
     <MESSAGE value="trabalho todo funcional" />
+    <MESSAGE value="css barra principal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -937,14 +943,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="67" selection-start="1078" selection-end="1078" vertical-scroll-proportion="-13.75">
+        <state line="37" column="46" selection-start="1056" selection-end="1056" vertical-scroll-proportion="-9.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="760" selection-end="760" vertical-scroll-proportion="0.57863504">
+        <state line="38" column="24" selection-start="923" selection-end="923" vertical-scroll-proportion="0.84569734">
           <folding />
         </state>
       </provider>

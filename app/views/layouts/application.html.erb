@@ -26,16 +26,16 @@
 
   <table>
     <tr>
-      <td>
+      <td class="youtube_space_icon">
 
         <div class="youtube_icon">
           <%=link_to( image_tag( escape_javascript(asset_path('youtube.jpg')),:height=>"42", :width=>"82", :mouseover => "youtube.jpg"), :controller => "/general", :action => "home") %>
         </div>
       </td>
-      <td>
+      <td class="search_space_bar">
         <form name='selection' action='/general/search' method='get' onsubmit="return contentLength(<%= :q %> );"  >
 
-          Pesquisa: <input type="text" name=<%=:q%>>
+          Pesquisa: <input type="text" size="75" name=<%=:q%>>
           <input type="submit" value="Search"  class="button_search">
 
         </form>

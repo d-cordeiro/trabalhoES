@@ -20,149 +20,155 @@
 }
 
 
-
-#search_bar{
-    background-color: lightgrey;
-    border: 2px solid;
-    padding: 7px 2px 7px 2px;
+.youtube_space_icon{
+width: 200px;
 }
 
-.button_search{
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
-    background: rgb(202, 60, 60);
-}
+.search_space_bar{
+     width: 900px
+ }
 
-.category_bar{
-    width: 200px;
-    text-align:justify;
-    vertical-align:top ;
-}
+ #search_bar{
+     background-color: lightgrey;
+     border: 2px solid;
+     padding: 7px 2px 7px 32px;
+ }
 
+ .button_search{
+     color: white;
+     border-radius: 4px;
+     background: rgb(202, 60, 60);
+ }
 
-.category_name {
-
-}
-
-.youtube_icon img:hover {
-                color: transparent;
-}
-
-
-#____________Video____________
-
-.video_title{
-    color: #000;
-    margin-top: 0;
-}
-
-.video_title span{
-    font-size: .9em;
-    letter-spacing: -0.05em;
-    font-family: arial,sans-serif;
-}
-
-.border_bottom{
-    border-bottom: 2px solid #666666;
-}
-
-.border_top{
-    border-top: 2px solid #e6e6e6;
-}
-
-.view_count {
-    float: right;
-}
-
-.view_count span{
-    font-size: 19px;
-    line-height: 24px;
-    color: #333;
-}
-
-.video_like{
-    float:left;
-}
-
-.video_dislike{
-    float: right;
-    margin-right: 330px;
-}
-
-.video_eval{
-    padding-bottom: 70px;
-}
-
-.comment_video{
-    margin-bottom: 10px;
-}
+ .category_bar{
+     width: 200px;
+     text-align:justify;
+     vertical-align:top ;
+ }
 
 
-.video_c{
-    margin-bottom: 50px;
-}
+ .category_name {
 
-.video_comment{
-    word-wrap: break-word;
-    width: 620px;
-}
+ }
 
-.comment_eval{
-    margin-bottom: 0px;
-}
-
-.clear_both{
-    clear: both;
-}
-
-.comment_like{
-    float: left;
-    height: 20px;
-}
-
-.comment_dislike{
-    float: right;
-    height: 20px;
-    margin-right: 80%;
-}
-
-.border_side{
-    border-left: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
-}
-
-.video_attr{
-    width: 620px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.video_info{
-    float: left;
-    margin-top: 20px;
-}
-
-.video_related{
-    border-bottom: 2px solid #e6e6e6;
-    margin-bottom: 10px;
-}
-
-.related_videos{
-    float: left;
-    width: 310px;
-    margin-left: 7%;
-}
-
-.video{
-    margin-left: 5%;
-    min-width: 1070px;
-}
+ .youtube_icon img:hover {
+                 color: transparent;
+ }
 
 
+ #____________Video____________
 
-.eval_form_tag{
-    /* Structure */
+ .video_title{
+     color: #000;
+     margin-top: 0;
+ }
+
+ .video_title span{
+     font-size: .9em;
+     letter-spacing: -0.05em;
+     font-family: arial,sans-serif;
+ }
+
+ .border_bottom{
+     border-bottom: 2px solid #666666;
+ }
+
+ .border_top{
+     border-top: 2px solid #e6e6e6;
+ }
+
+ .view_count {
+     float: right;
+ }
+
+ .view_count span{
+     font-size: 19px;
+     line-height: 24px;
+     color: #333;
+ }
+
+ .video_like{
+     float:left;
+ }
+
+ .video_dislike{
+     float: right;
+     margin-right: 330px;
+ }
+
+ .video_eval{
+     padding-bottom: 70px;
+ }
+
+ .comment_video{
+     margin-bottom: 10px;
+ }
+
+
+ .video_c{
+     margin-bottom: 50px;
+ }
+
+ .video_comment{
+     word-wrap: break-word;
+     width: 620px;
+ }
+
+ .comment_eval{
+     margin-bottom: 0px;
+ }
+
+ .clear_both{
+     clear: both;
+ }
+
+ .comment_like{
+     float: left;
+     height: 20px;
+ }
+
+ .comment_dislike{
+     float: right;
+     height: 20px;
+     margin-right: 80%;
+ }
+
+ .border_side{
+     border-left: 1px solid #e6e6e6;
+     border-right: 1px solid #e6e6e6;
+ }
+
+ .video_attr{
+     width: 620px;
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+
+ .video_info{
+     float: left;
+     margin-top: 20px;
+ }
+
+ .video_related{
+     border-bottom: 2px solid #e6e6e6;
+     margin-bottom: 10px;
+ }
+
+ .related_videos{
+     float: left;
+     width: 310px;
+     margin-left: 7%;
+ }
+
+ .video{
+     margin-left: 5%;
+     min-width: 1070px;
+ }
+
+
+
+ .eval_form_tag{
+     /* Structure */
     display: inline-block;
     zoom: 1;
     font-size: 100%;
