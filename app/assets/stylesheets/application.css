@@ -25,7 +25,8 @@ width: 200px;
 }
 
 .search_space_bar{
-     width: 900px
+     width: 850px
+
  }
 
  #search_bar{
@@ -37,6 +38,7 @@ width: 200px;
  .button_search{
      color: white;
      border-radius: 4px;
+     text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
      background: rgb(202, 60, 60);
  }
 
@@ -52,7 +54,7 @@ width: 200px;
  }
 
  .youtube_icon img:hover {
-                 color: transparent;
+     color: transparent;
  }
 
 
