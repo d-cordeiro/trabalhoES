@@ -1,5 +1,5 @@
 Youtbe::Application.routes.draw do
-
+  root to: "general#home"
   resources :evaluation_comments
 
 
@@ -9,12 +9,13 @@ Youtbe::Application.routes.draw do
   devise_for :users
   devise_for :users, :controllers => { :registrations => "registrations" }
 
-  root to: "general#home"
+
 
   match "/panda/authorize_upload", :to => "panda#authorize_upload"
   resources :videos
 
   get "general/search"
+
   get "videos/addVideo"
   get  "general/searchcategory"
   get "general/home"

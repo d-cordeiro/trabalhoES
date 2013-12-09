@@ -4,7 +4,11 @@ class GeneralController < ApplicationController
   end
 
   def search
-    @list = Video.where('title like ?', '%'+params[:q]+'%').order('title ASC');
+                    if !params[:q].blank?
+                      @list = Video.where('title like ?', '%'+params[:q]+'%').order('title ASC');
+                    end
+
+
   end
 
   def searchcategory

@@ -9,7 +9,7 @@
 
           <td>
 
-            <%=link_to( image_tag(escape_javascript(asset_path(video.image_path)),:size => "310x173"),
+            <%=link_to( image_tag( escape_javascript(asset_path(video.image_path)),:size => "310x173"),
                        {:controller => "videos", :action => "show", :id => video.id}) %>
             <p> <%= video.title %></p>
 

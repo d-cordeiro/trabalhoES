@@ -22,11 +22,11 @@
 
 
 #search_bar{
-    background-color: lightpink;
+    background-color: lightgrey;
     border: 2px solid;
 }
 
-/************************************************************************************/
+
 
 .category_bar{
     width: 200px;
@@ -37,6 +37,10 @@
 
 .category_name {
 
+}
+
+.youtube_icon img:hover {
+                color: transparent;
 }
 
 

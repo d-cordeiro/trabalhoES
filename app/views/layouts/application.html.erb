@@ -7,6 +7,21 @@
   <%= javascript_include_tag "video.js" %>
   <script src="//cdn.pandastream.com/u/2.0/panda-uploader.min.js"></script>
   <%= csrf_meta_tags %>
+  <script type="text/javascript" language="javascript">
+
+
+      function  contentLength(q){
+
+          if(q.value ==  "")  {
+              return false;
+          }
+
+          return true;
+
+      }
+  </script>
+
+
 </head>
 <body>
 <div id=search_bar>
@@ -14,20 +29,23 @@
   <table>
     <tr>
       <td>
-        <img src="<%= escape_javascript(asset_path('youtube.jpg')) %>" alt="youtube icon" height="42" width="82">
+
+        <div class="youtube_icon">
+          <%=link_to( image_tag( escape_javascript(asset_path('youtube.jpg')),:height=>"42", :width=>"82", :mouseover => "youtube.jpg"), :controller => "/general", :action => "home") %>
+        </div>
       </td>
       <td>
-        <%= form_tag("/general/search", :method => "get") do %>
-            <%= label_tag(:q, "Pesquisa:") %>
-            <%= text_field_tag(:q) %>
-            <%= submit_tag("Search") %>
-        <% end %>
+        <form name='selection' action='/general/search' method='get' onsubmit="return contentLength(<%= :q %> );"  >
+
+          Pesquisa: <input type="text" name=<%=:q%>><br>
+          <input type="submit" value="Search">
+
+        </form>
       </td>
       <td>
         <div id="user_nav">
           <% if user_signed_in? %>
               Bem vindo, <%= current_user.username %>!
-              <%= button_to "Carregar Video", new_video_path, :method => :get %>
               <%= link_to "Terminar sessão", destroy_user_session_path, :method => :delete %>
           <% else %>
               <%= link_to "Criar conta", new_user_registration_path %> <%= link_to "Iniciar sessão", new_user_session_path %>
